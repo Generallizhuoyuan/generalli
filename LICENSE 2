@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>visionsky</title>
+    <style>
+        *{
+            marign:0;
+            padding:0;
+        }
+        div>ul>li{
+            float: left;
+        }
+        li{
+            list-style-type:none ;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background: greenyellow;
+        }
+        div ul ul{
+            display: none;
+        }
+    </style>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(function (){
+            $("div>ul>li").hover(function (){
+                $(this).children().stop().slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+<body>
+<div>
+    <ul>
+        <li>核心产品
+            <ul>
+                <li><a href="">工具软件类产品</a></li>
+                <li><a href="">业务支持类产品</a></li>
+            </ul>
+        </li>
+        <li>加入我们
+            <ul>
+                <li><a href="">招聘职位</a> </li>
+                <li><a href="">应聘流程</a></li>
+            </ul>
+        </li>
+    </ul>
